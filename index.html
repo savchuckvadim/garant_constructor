@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/btnStyle.css">
+
+
+
+    <title>April</title>
+</head>
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <div class="dropdown">
+                    <button class="btn btn-modal dropdown-toggle modal__complect btn__modal" type="button"
+                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>Выберите комплект</p>
+
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li> <button type="button"
+                                class="btn btns__complect  btn__accountant--modal dropdown-item"><label for="complect0"
+                                    class="complect__name">
+                                    Бухгалтер</label><img src="./img/btns/Ellipse 1.svg" alt=""></button></li>
+                        <li><button type="button" class="btn btns__complect  btn__budget--modal dropdown-item"><label
+                                    for="complect1" class="complect__name">
+                                    Бухгалтер
+                                    госсектора</label><img src="./img/btns/Ellipse 1.svg" alt=""></button></li>
+                        <li> <button type="button"
+                                class="btn btns__complect  btn__accountant--modal dropdown-item"><label for="complect3"
+                                    class="complect__name">
+                                    Главный Бухгалтер</label><img src="./img/btns/Ellipse 1.svg" alt=""></button></li>
+                        <li><button type="button" class="btn btns__complect  btn__budget--modal dropdown-item"><label
+                                    for="complect4" class="complect__name">
+                                    Главный
+                                    Бухгалтер
+                                    госсектора</label><img src="./img/btns/Ellipse 1.svg" alt=""></button></li>
+                        <li> <button type="button" class="btn btns__complect  btn__lawyer--modal dropdown-item"> <label
+                                    for="complect2" class="complect__name">Юрист</label><img
+                                    src="./img/btns/Ellipse 1.svg" alt=""></button></li>
+                        <li><button type="button" class="btn btns__complect  btn__company--modal dropdown-item"><label
+                                    for="complect5" class="complect__name ">Предприятие</label><img
+                                    src="./img/btns/Ellipse 1.svg" alt=""></button></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropdown__od">
+                    <button class="btn btn__od dropdown-toggle" type="button"
+                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>Выберите количество пользователей</p>
+
+                    </button>
+                <ul class="dropdown-menu menu__od" aria-labelledby="dropdownMenu2">
+                    <li><button type="button" class="btn btn__od dropdown-item"><label for="">1 Одновременный доступ</label></button></li>
+                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">2 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">3 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">5 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">10 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">20 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">30 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">50 Одновременных доступа</label></button></li>
+                </ul>
+                </div>
+
+                <button type="reset" class="btn__reset btn btn-dark">Сбросить</button>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="body">
+
+    <body class="" id="">
+
+
+        <!-- Modal -->
+
+        <header>
+            <div class="header__container">
+                <!-- <div class="header__logoContainer"> -->
+                <img class="header__logo" src="./img/logo-icon-solid-horizontal.svg" alt="logo">
+                <!-- </div> -->
+                <div class="container__darktheme">
+                    <button id="round"></button>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <!-- Button trigger modal -->
+
+
+            <form id="" class="form form__general">
+                <div class="container-fluid container__general">
+
+                    <button type="button" class="btn btn__modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <p>Выберите комплект</p>
+                        <img src="./img/btns/Ellipse 1.svg" alt="">
+                    </button>
+                    <!-- <div class="row general__row1"> -->
+                    <!-- <input class="form-control me-2 btn btn__accountant" name="login" autocomplete="username" type="button" value="Бухгалтер"> -->
+                    <button type="button" class="btn btns__complect  btn__accountant"><label for="complect0"
+                            class="complect__name">
+                            Бухгалтер</label><img src="./img/btns/Ellipse 1.svg" alt=""></button>
+                    <button type="button" class="btn btns__complect  btn__budget"><label for="complect1"
+                            class="complect__name">
+                            Бухгалтер
+                            госсектора</label><img src="./img/btns/Ellipse 1.svg" alt=""></button>
+
+                    <button type="button" class="btn btns__complect  btn__accountant"><label for="complect3"
+                            class="complect__name">
+                            Главный Бухгалтер</label><img src="./img/btns/Ellipse 1.svg" alt=""></button>
+                    <button type="button" class="btn btns__complect  btn__budget"><label for="complect4"
+                            class="complect__name">
+                            Главный
+                            Бухгалтер
+                            госсектора</label><img src="./img/btns/Ellipse 1.svg" alt=""></button>
+
+                    <button type="button" class="btn btns__complect  btn__lawyer"> <label for="complect2"
+                            class="complect__name">Юрист</label><img src="./img/btns/Ellipse 1.svg" alt=""></button>
+                    <button type="button" class="btn btns__complect  btn__company "><label for="complect5"
+                            class="complect__name ">Предприятие</label><img src="./img/btns/Ellipse 1.svg"
+                            alt=""></button>
+                            <div class="dropdown dropdown__od">
+                                <button class="btn btn__od dropdown-toggle" type="button"
+                                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Выберите количество пользователей
+            
+                                </button>
+                            <ul class="dropdown-menu menu__od" aria-labelledby="dropdownMenu2">
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">1 Одновременный доступ</label></button></li>
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">2 Одновременных доступа</label></button></li>
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">3 Одновременных доступа</label></button></li>
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">5 Одновременных доступа</label></button></li>
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">10 Одновременных доступа</label></button></li>
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">20 Одновременных доступа</label></button></li>
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">30 Одновременных доступа</label></button></li>
+                                <li><button type="button" class="btn btn__od dropdown-item"><label for="">50 Одновременных доступа</label></button></li>
+                            </ul>
+                            </div>
+                    <button type="reset" class="btn__reset btn btn-dark">Сбросить</button>
+                    <!-- </div> -->
+                    <div class="row general__row2 ">
+
+                        <!-- <input class="form-control me-2 btn btn__accountant" name="login" autocomplete="username" type="button" value="Бухгалтер">
+                    <input class="form-control btn btn-primary me-2" name="password" autocomplete="current-password" type="button"> -->
+                    </div>
+                </div>
+
+                <!-- <button id="app-login-btn" class="btn btn-outline-info" type="submit">Sign In</button> -->
+            </form>
+
+        
+
+            <div class="complect__options">
+                <p>Выберите подходящий комплект Гарант</p>
+                <form action="" class="complect__options--form">
+
+
+                    <div id="menu" class="grid-wrapper1">
+                        <div class="grid-item item">
+                            <h2>Нормативно-правовые акты</h2>
+                            <p><label> <input class="small block" id="1" type="checkbox" name="checkbox[1]" value="1"
+                                        checked>
+                                    Законодательство России</label></p>
+                            <p><label id="stav"> <input class="small block" id="2" type="checkbox" name="checkbox[2]"
+                                        value="2">
+                                    Законодательство
+                                    Ставропольского края и КМВ или Законодательство РСО Алания</label></p>
+                            <p> <label> <input class="big block" id="3" type="checkbox" name="checkbox[3]" value="3">
+                                    Отраслевое
+                                    законодательство</label></p>
+                            <p> <label> <input class="small block" id="4" type="checkbox" name="checkbox[4]" value="4">
+                                    Проекты
+                                    законов</label></p>
+                            <p><label> <input class="small block" id="5" type="checkbox" name="checkbox[5]" value="5">
+                                    Международное
+                                    право</label></p>
+                            <p><label> <input class="big block" id="6" type="checkbox" name="checkbox[6]" value="6">
+                                    ГОСТы
+                                    России</label>
+                            </p>
+                            <p><label> <input class="big block" id="7" type="checkbox" name="checkbox[7]" value="7">
+                                    Решения
+                                    Федеральной
+                                    антимонопольной службы</label></p>
+                        </div>
+
+                        <div class="grid-item item">
+                            <h2>Судебная Практика</h2>
+                            <p> <label id="l8"><input id="8" class="big block" type="checkbox" name="checkbox[8]"
+                                        value="8">
+                                    Практика высших судебных органов</label></p>
+                            <p>
+                                <label id="l9"><input id="9" class="big block" type="checkbox" name="checkbox[9]"
+                                        value="9">
+                                    Практика арбитражных судов округов</label>
+                            </p>
+                            <p> <label id="l10"><input id="10" class="big block" type="checkbox" name="checkbox[10]"
+                                        value="10">
+                                    Практика апелляционных судов округов</label></p>
+                            <p> <label id="l11"><input id="11" class="big block" type="checkbox" name="checkbox[11]"
+                                        value="11">
+                                    Практика судов общей юрисдикции</label></p>
+                            <p> <label id="l12"><input id="12" class="small block" type="checkbox" name="checkbox[12]"
+                                        value="12"> Энциклопедия судебной практики. Правовые позиции судов</label></p>
+
+                        </div>
+                        <div class="grid-item item">
+
+                            <h2>Консультационные материалы</h2>
+                            <p><label id="l13"><input id="13" class="big block" type="checkbox" name="checkbox[13]"
+                                        value="13">
+                                    Большая библиотека юриста</label></p>
+
+                            <p><label id="l14"><input id="14" class="big gb gbg block" type="checkbox"
+                                        name="checkbox[14]" value="14"> Большая библиотека бухгалтера и кадрового
+                                    работника</label></p>
+                            <p><label id="l15"><input id="15" class="small block" type="checkbox" name="checkbox[15]"
+                                        value="15"> Библиотека консультаций. Бухгалтерия предприятия</label> </p>
+                            <p><label id="l16"><input id="16" class="small block" type="checkbox" name="checkbox[16]"
+                                        value="16"> Библиотека консультаций. Бюджетные организации</label></p>
+                            <p><label id="l17"><input id="17" class="small block" type="checkbox" name="checkbox[17]"
+                                        value="17"> Библиотека консультаций. Кадры</label></p>
+                        </div>
+
+                        <div class="grid-item item">
+
+                            <h2>Специализированные блоки</h2>
+                            <p><label id="l18"><input id="18" class="block" type="checkbox" name="checkbox[18]"
+                                        value="30">
+                                    Толковый словарь «Бизнес и право»</label></p>
+                            <p><label id="l19"><input id="19" class="block" type="checkbox" name="checkbox[19]"
+                                        value="31">
+                                    Энциклопедия. Законодательство в схемах</label></p>
+                            <p><label id="l20"><input id="20" class="block" type="checkbox" name="checkbox[20]"
+                                        value="32">
+                                    Энциклопедия. Формы правовых документов</label></p>
+                            <p><label id="l21"><input id="21" class="block" type="checkbox" name="checkbox[21]"
+                                        value="33">
+                                    ГАРАНТ-Инфарм</p>
+                            <p><label id="l22"><input id="22" class="block" type="checkbox" name="checkbox[22]"
+                                        value="34">
+                                    Справочник нормативно-технической документации по строительству</label></p>
+
+
+
+                        </div>
+
+                        <!-- <span class="inputencyclopedii"> -->
+
+                        <div class="grid-item item">
+
+                            <h2>Пакет энциклопедий решений</h2>
+                            <p><label><input id="encyclopedia_paket_1" class="block" type="checkbox" name="checkbox[28]"
+                                        value="22">Пакет Энциклопедий решений для
+                                    бухгалтера</label></p>
+
+                            <p><label><input id="encyclopedia_paket_2" class="block" type="checkbox" name="checkbox[29]"
+                                        value="22">Пакет Энциклопедий решений для бухгалтера
+                                    госсектора</label></p>
+                            <p><label><input id="encyclopedia_paket_3" class="block" type="checkbox" name="checkbox[30]"
+                                        value="22">Пакет Энциклопедийрешений для юриста</label>
+                            </p>
+
+
+
+                        </div>
+                        <div class="grid-item item">
+                            <h2>Энциклопедии решений</h2>
+                            <p><label><input id="encyclopedia_1" class="block" type="checkbox" name="checkbox[23]"
+                                        value="1"> Энциклопедия решений. Проверки организаций и
+                                    предпринимателей</label>
+                            </p>
+                            <p><label><input id="encyclopedia_2" class="block" type="checkbox" name="checkbox[24]"
+                                        value="1"> Энциклопедия решений. Госсектор: учет, отчетность,
+                                    финконтроль</label>
+                            </p>
+                            <p><label><input id="encyclopedia_3" class="block" type="checkbox" name="checkbox[25]"
+                                        value="1"> Энциклопедия решений. Хозяйственные ситуации</label></p>
+                            <p><label><input id="encyclopedia_4" class="block paket3" type="checkbox"
+                                        name="checkbox[26]" value="1"> Энциклопедия решений. Госзакупки</label></p>
+                            <p><label><input id="encyclopedia_5" class="block paket2 paket3" type="checkbox"
+                                        name="checkbox[27]" value="1"> Энциклопедия решений. Трудовые отношения.
+                                    Кадры</label></p>
+                            <p><label><input id="encyclopedia_6" class="block paket2" type="checkbox"
+                                        name="checkbox[28]" value="1"> Энциклопедия решений. Налоги и взносы</label>
+                            </p>
+                            <p><label><input id="encyclopedia_7" class="block paket2 paket3" type="checkbox"
+                                        name="checkbox[29]" value="1"> Энциклопедия решений. Договоры и иные
+                                    сделки</label>
+                            </p>
+                            <p><label><input id="encyclopedia_8" class="block  paket3" type="checkbox"
+                                        name="checkbox[30]" value="1"> Энциклопедия решений. Корпоративное
+                                    право</label>
+                            </p>
+                        </div>
+
+
+                        <!-- </span> -->
+
+
+                        <div class="grid-item item">
+                            <h2>Пакет услуг правового консалтинга</h2>
+
+                            <p><label id="l23"><input id="23" class="block" type="checkbox" name="checkbox[28]"
+                                        value="35">
+                                    Горячая Линия</label></p>
+                            <p><label id="l24"><input id="24" class="block" type="checkbox" name="checkbox[29]"
+                                        value="36">
+                                    Советы Экспертов</label></p>
+                            <p><label id="l25"><input id="25" class="block" type="checkbox" name="checkbox[30]"
+                                        value="37">
+                                    Правовой консалтинг. Премиум</label></p>
+
+                        </div>
+
+                        <div class="grid-item item">
+
+                            <h2>Дополнительно</h2>
+                            <p><input id="26" type="checkbox" name="checkbox[28]" value="26"> Архивы ГАРАНТа</p>
+                            <p><input id="27" type="checkbox" name="checkbox[29]" value="27"> ПРАЙМ</p>
+                            <p><input id="28" type="checkbox" name="checkbox[30]" value="28"> Судебная практика:
+                                приложение
+                                кконсультационным блокам</p>
+                            <p><input id="29" type="checkbox" name="checkbox[30]" value="29"> Большая домашняя правовая
+                                энциклопедия</p>
+                        </div>
+
+                        <div class="grid-item item">
+                            <h2>Сервисный пакет Legal Tech</h2>
+
+                            <p><input id="30" class="lt" type="checkbox" name="checkbox[28]"
+                                    value="Аналитическая система Сутяжник"> Аналитическая система "Сутяжник"</p>
+                            <p><input id="31" class="lt block" type="checkbox" name="checkbox[29]"
+                                    value="Конструктор правовых документов"> Конструктор правовых документов</p>
+                            <p><input id="32" class="lt" type="checkbox" name="checkbox[30]"
+                                    value="Экспресс проверка контрагентов"> Экспресс проверка контрагентов</p>
+                            <p><input id="33" class="lt" type="checkbox" name="checkbox[28]"
+                                    value="Экспресс Согласование">
+                                Экспресс Согласование</p>
+                            <p><input id="34" class="lt" type="checkbox" name="checkbox[29]" value="Экспресс тендер">
+                                Экспресс
+                                тендер</p>
+                            <p><input id="35" class="lt" type="checkbox" name="checkbox[30]" value="Гарант Диск"> Гарант
+                                Диск
+                            </p>
+                            <p><input id="36" class="lt" type="checkbox" name="checkbox[28]" value="Гарант Коннект">
+                                Гарант
+                                Коннект</p>
+                            <p><input id="37" class="lt" type="checkbox" name="checkbox[29]" value="Гарант Патент">
+                                Гарант
+                                Патент</p>
+                            <p><input id="38" class="lt" type="checkbox" name="checkbox[30]" value="Интернет-Семианры">
+                                Интернет-Семианры</p>
+                            <p><input id="39" class="lt" type="checkbox" name="checkbox[30]"
+                                    value="ЭТАЛОННЫЙ КЛАССИФИКАТОР">
+                                ЭТАЛОННЫЙ КЛАССИФИКАТОР</p>
+                        </div>
+                    
+                    </div>   
+                </form>
+         </div>
+                <div class="result__wrapper">
+                    <p id="complect__name" class="result blocksWeight">Наименование комплекта  Гарант-Бухгалтер</p>
+                    <p id="blocksWeight" class="result blocksWeight">Вес  4.5</p>
+                    <p id="pod" class="result blocksWeight">количество одновременных доступов   10</p>
+                    <p id="complect__lt" class="result blocksWeight">Legal Tech  малый пакет</p>
+                    <p id="complect__price" class="result blocksWeight">Стоимость 6 780 р</p>
+                    <p><a href="#"> Описание комплекта</a></p>
+                    <button type="button" class="btn btn-primary">Выбрать комплект</button>
+                    <!-- <div class="result__container">
+                        <button class="description">Показать описание</button>
+                    </div> -->
+
+
+                </div>
+
+
+
+            
+        </main>
+
+<script type="module" src="script.js"></script>
+<script type="module" src="./dark_theme_script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+</script>
+</body>
+</div>
+</html>

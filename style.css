@@ -1,0 +1,164 @@
+/* Указываем box sizing */
+@import url('./styles/darktheme.css');
+@import url('./styles/header.css');
+@import url('./styles/form.css');
+@import url('./styles/modal.css');
+@import url('./styles/od.css');
+
+@import url('./styles/result.css');
+@import url('./styles/btnStyle.css');
+@import url('./styles/complectOptions.css');
+
+@import url('./styles/main.css');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    /* scroll-behavior: smooth; */
+    /* text-rendering: optimizeSpeed;
+    line-height: 1.5; */
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    font-family: 'Source Sans Pro';
+    font-style: bold;
+}
+h1{
+    text-align: center;
+    
+}
+
+
+
+
+/* .complect__name {
+    border-style: solid;
+    border-color: orange;
+} */
+
+
+
+
+
+.description {
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 800px) { 
+    .description {
+        display: none;
+    }
+    
+}
+
+/* The switch - the box around the slider */
+
+  /* dark-theme */
+#color{
+    /* transition-property: background-color;
+    transition-duration: 3s; */
+}
+
+
+
+/* second version */
+/* 
+#round{
+    border-color: black;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-image: url('./img/dark_mode_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition-property: background-image, background-color, transform;
+    /* transition-duration: 2s;  */
+    /* transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1); */
+   /* transition: 4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-delay: 0.4s; 
+     transform: rotateZ(720deg); 
+} */
+
+
+
+
+
+

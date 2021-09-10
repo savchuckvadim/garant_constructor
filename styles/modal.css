@@ -1,0 +1,17 @@
+.modal-body{
+    /* height: 100vh; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.modal__complect{
+    min-width: 322px;
+    min-height: 54px;
+}
+
+.btn__modal{
+    color: black;
+}

@@ -1,0 +1,16 @@
+.complect__options--form{
+    min-width: 70vh;
+}
+
+/* INFOBLOCKS */
+.grid-wrapper1 {
+    margin: 0;
+    margin-top: 10vh;
+    display: grid;
+    grid-gap: 10vh;
+    grid-template-columns: repeat(auto-fit, 40vh);
+    grid-template-rows: auto;
+} 
+.grid-item{
+    min-width: 40vh;
+}
