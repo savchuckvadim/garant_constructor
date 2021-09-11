@@ -21,18 +21,18 @@
     <div class="modal-dialog modal-fullscreen modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel"><img class="header__logo" src="./img/logo-icon-solid-horizontal.svg" alt="logo"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
 
                 <div class="dropdown">
-                    <button class="btn btn-modal dropdown-toggle modal__complect btn__modal" type="button"
-                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <p>Выберите комплект</p>
+                    <button class="btn btn-modal dropdown-toggle modal__complect" type="button"
+                        id="dropdownMenu1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>Комплект</p>
 
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                         <li> <button type="button"
                                 class="btn btns__complect  btn__accountant--modal dropdown-item"><label for="complect0"
                                     class="complect__name">
@@ -59,20 +59,20 @@
                     </ul>
                 </div>
                 <div class="dropdown dropdown__od">
-                    <button class="btn btn__od dropdown-toggle" type="button"
-                        id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                        <p>Выберите количество пользователей</p>
+                    <button class="btn btn__od--modal dropdown-toggle" type="button"
+                        id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">
+                        <p>Количество пользователей</p>
 
                     </button>
-                <ul class="dropdown-menu menu__od" aria-labelledby="dropdownMenu2">
-                    <li><button type="button" class="btn btn__od dropdown-item"><label for="">1 Одновременный доступ</label></button></li>
-                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">2 Одновременных доступа</label></button></li>
-                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">3 Одновременных доступа</label></button></li>
-                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">5 Одновременных доступа</label></button></li>
-                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">10 Одновременных доступа</label></button></li>
-                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">20 Одновременных доступа</label></button></li>
-                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">30 Одновременных доступа</label></button></li>
-                    <li><button type="button" class="btn btn__od  dropdown-item"><label for="">50 Одновременных доступа</label></button></li>
+                <ul class="dropdown-menu menu__od--modal" aria-labelledby="dropdownMenu3">
+                    <li><button type="button" class="btn btn__od--modal dropdown-item"><label for="">1 Одновременный доступ</label></button></li>
+                    <li><button type="button" class="btn btn__od--modal  dropdown-item"><label for="">2 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od--modal  dropdown-item"><label for="">3 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od--modal  dropdown-item"><label for="">5 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od--modal  dropdown-item"><label for="">10 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od--modal  dropdown-item"><label for="">20 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od--modal  dropdown-item"><label for="">30 Одновременных доступа</label></button></li>
+                    <li><button type="button" class="btn btn__od--modal  dropdown-item"><label for="">50 Одновременных доступа</label></button></li>
                 </ul>
                 </div>
 
@@ -111,12 +111,15 @@
 
 
             <form id="" class="form form__general">
+                <p>Выберите подходящий комплект Гарант</p>
                 <div class="general">
 
                     <button type="button" class="btn btn__modal" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <p>Выберите комплект</p>
                         <img src="./img/btns/Ellipse 1.svg" alt="">
                     </button>
+                   
+
                     <!-- <div class="row general__row1"> -->
                     <!-- <input class="form-control me-2 btn btn__accountant" name="login" autocomplete="username" type="button" value="Бухгалтер"> -->
                     <button type="button" class="btn btns__complect  btn__accountant"><label for="complect0"
@@ -142,8 +145,7 @@
                             class="complect__name ">Предприятие</label><img src="./img/btns/Ellipse 1.svg"
                             alt=""></button>
                             <div class="dropdown dropdown__od">
-                                <button class="btn btn__od dropdown-toggle" type="button"
-                                    id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn__od dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
                                     Выберите количество пользователей
             
                                 </button>
@@ -171,10 +173,9 @@
             </form>
 
         
-
+        
             <div class="complect__options">
-                <p>Выберите подходящий комплект Гарант</p>
-                <form action="" class="complect__options--form">
+                <!-- <form action="" class="complect__options--form"> -->
 
 
                     <div id="menu" class="grid-wrapper1">
@@ -258,7 +259,7 @@
                                     Энциклопедия. Формы правовых документов</label></p>
                             <p><label id="l21"><input id="21" class="block" type="checkbox" name="checkbox[21]"
                                         value="33">
-                                    ГАРАНТ-Инфарм</p>
+                                    ГАРАНТ-Инфарм</label></p>
                             <p><label id="l22"><input id="22" class="block" type="checkbox" name="checkbox[22]"
                                         value="34">
                                     Справочник нормативно-технической документации по строительству</label></p>
@@ -379,7 +380,7 @@
                         </div>
                     
                     </div>   
-                </form>
+                <!-- </form> -->
          </div>
                 <div class="result__wrapper">
                     <p id="complect__name" class="result blocksWeight">Наименование комплекта  Гарант-Бухгалтер</p>
@@ -388,7 +389,7 @@
                     <p id="complect__lt" class="result blocksWeight">Legal Tech  малый пакет</p>
                     <p id="complect__price" class="result blocksWeight">Стоимость 6 780 р</p>
                     <p><a href="#"> Описание комплекта</a></p>
-                    <button type="button" class="btn btn-primary">Выбрать комплект</button>
+                    <button type="button" class="btn btn-primary result__btn">Выбрать комплект</button>
                     <!-- <div class="result__container">
                         <button class="description">Показать описание</button>
                     </div> -->

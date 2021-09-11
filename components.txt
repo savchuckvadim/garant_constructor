@@ -1,0 +1,9 @@
+1.Header
+1.1 Header Logo
+1.2 Header theme-button
+
+2.Main
+  2.1 Complect Options (btns-complectName btn-complect-od, modal)
+  2.2 Complect Infoblocks 
+     2.2.1 Blocks Type of Infoblocks (title, checkboxes)
+  2.3 Result information about complect

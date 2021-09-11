@@ -1,73 +1,148 @@
 .main{
-    max-width: 100%;
+    /* max-width: 100%; */
     /* min-width: 100vh; */
   display: grid;
   position: relative;
   margin: 0;
-  grid-template-columns: repeat(auto-fit, 70%);
-  grid-gap: 0px;
-  /* grid-auto-rows: minmax(12px, auto); */
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 10fr;
+
+  grid-gap: 24px;
+  grid-auto-rows: minmax(12px, auto);
 }
 
 .form__general{
-    grid-column: 1;
-    grid-row: 1;
+    /* background-color: blue; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    /* grid-column: 1;
+    grid-row: 1; */
     margin-left: 8vh;
 }
 .complect__options{
+    margin-left: 8vh;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    align-self: start;
+    /* justify-self: end;
+    align-self: start; */
     /* grid-column: 1/2; */
-    grid-row: 2;
-   
+    /* grid-row: 2; */
+   /* background-color: cadetblue; */
     
 }
 .result__wrapper{
-   
-    grid-row: 2;
+   /* background-color: rgb(0, 141, 146); */
+   grid-column-start: 2;
+    grid-column-end: 2;
+   justify-self: end;
+   align-self: start;
+    /* grid-row: 2; */
 }
-@media (min-width: 900px) {
-    .result__wrapper{
-        grid-row: 2;
-    }
-
-    .complect__options {
-        width: 100%;
-          margin-top: 5vh;
-          margin-left: 10vh;
-          display: grid;
-          grid-template-columns: repeat(auto-fit, 80%);
-          grid-template-rows: auto;
-      } 
-}
-@media (max-width: 900px) {
-    
+@media (max-width: 768px) {
     .main{
-        max-width: 90%;
-        /* min-width: 100vh; */
-      display: flex;
+        height: 100%;
+      display: grid;
       position: relative;
       margin: 0;
-      flex-direction: column;
-      justify-content: center;
-      align-items: baseline;
-      /* grid-template-columns: repeat(auto-fit, 0%);
-      grid-gap: 0px; */
-      /* grid-auto-rows: minmax(12px, auto); */
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr ;
+      grid-gap: 24px;
+      grid-auto-rows: minmax(12px, auto);
+     
     }
 
     .form__general{
+        /* background-color: blue; */
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: 0vh;
         /* grid-column: 1;
         grid-row: 1; */
-        margin-left: 0vh;
+       justify-self: center;
     }
+
     .complect__options{
-        /* grid-column: 1/2; */
-        /* grid-row: 2; */
-        margin: 3vh;
+        margin-left: 0vh;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      
+        justify-content: end;
+        /* align-self: center; */
+
         
     }
 
     .result__wrapper{
-        /* grid-row: 3; */
+        /* background-color: rgb(0, 141, 146); */
+        grid-column-start: 1;
+         grid-column-end: 1;
+         grid-row-start: 3;
+         grid-row-end: 3;
+         justify-self: center;
+        /*align-self: start; */
+         /* grid-row: 2; */
+     }
+
+}
+
+@media (max-width: 520px) {
+    .main{
+      display: grid;
+      position: relative;
+      margin: 0;
+      
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr;
+      grid-gap: 0vh;
+      /* grid-auto-rows: minmax(12px, auto); */
+     
+    }
+
+    .form__general{
+        /* background-color: blue; */
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        margin-left: 0vh;
+        /* grid-column: 1;
+        grid-row: 1; */
+       justify-self: center;
+    }
+
+    .complect__options{
+        margin-left: 0vh;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 2;
+        grid-row-end: 2;
+      
+        /* justify-content: end; */
+        /* align-self: center; */
+
         
     }
+
+    .result__wrapper{
+        margin: 0;
+        padding: 0;
+        /* background-color: rgb(0, 141, 146); */
+        grid-column-start: 1;
+         grid-column-end: 1;
+         grid-row-start: 3;
+         grid-row-end: 3;
+         /* justify-self: center; */
+        /*align-self: start; */
+         /* grid-row: 2; */
+     }
+
 }

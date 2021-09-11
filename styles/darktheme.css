@@ -31,8 +31,8 @@
     
     background-repeat: no-repeat;
     background-position: center;
-    transition-property: background-image, background-color, transform;
-    transition-duration: 1.5s; 
-    transition-delay: 0.2s; 
+    transition-property: background-image, background-color, text-color, color, transform;
+    transition-duration: 0.7s; 
+    transition-delay: 0.1s; 
      /* transform: rotateZ(720deg);  */
 } 

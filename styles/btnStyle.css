@@ -15,14 +15,15 @@
 .btn__lawyer--modal,
 .btn__company--modal,
 .btn__od--modal,
-.btn__reset--modal {
+.btn__reset--modal,
+.modal__complect {
     /* width: 49vh;
 
  height: 7vh;   */
     width: 322px;
     height: 54px;
 
-    margin: 1vh;
+    /* margin: 1vh; */
 
     display: flex;
     justify-content: space-between;
@@ -61,7 +62,7 @@
     }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 701px) {
 
     .btn__accountant,
     .btn__budget,
@@ -76,10 +77,9 @@
     .btn__budget--modal,
     .btn__lawyer--modal,
     .btn__company--modal,
-    /* .btn__od, */
     .btn__reset--modal,
-    .btn__modal 
-    {
+    .btn__od--modal,
+    .btn__modal {
         display: none;
 
     }
@@ -90,9 +90,8 @@
     .btn__accountant,
     .btn__budget,
     .btn__lawyer,
-    .btn__company
-    /* .btn__od */
-     {
+    .btn__company,
+    .btn__od {
         /* .btn__reset {  */
         display: none;
     }
@@ -101,7 +100,7 @@
     .btn__budget--modal,
     .btn__lawyer--modal,
     .btn__company--modal,
-    /* .btn__od--modal, */
+    .btn__od--modal,
     /* .btn__reset--modal, */
     .btn__modal {
         display: flex;
@@ -169,8 +168,42 @@ flex-wrap: wrap; */
 
 }
 
-.btn__od, .btn__od--modal {
+.btn__od,
+.btn__od--modal {
     border: 2px solid;
     border-color: rgb(34, 22, 46);
+
+}
+.modal__complect{
+    border: 2px solid;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(49, 31, 66);;
+    color: rgb(255, 255, 255);
+}
+
+@media (max-width: 322px) {
+
+    .btns__complect,
+    .btn__accountant,
+    .btn__budget,
+    .btn__lawyer,
+    .btn__company,
+    .btn__od,
+    .btn__reset,
+    .btn__modal,
+    .btn__accountant--modal,
+    .btn__budget--modal,
+    .btn__lawyer--modal,
+    .btn__company--modal,
+    .btn__od--modal,
+    .btn__reset--modal,
+    .modal__complect {
+        /* width: 49vh;
+
+ height: 7vh;   */
+        width: 275px;
+        height: 45px;
+
+    }
 
 }
