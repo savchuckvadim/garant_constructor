@@ -43,7 +43,8 @@
    align-self: start;
     /* grid-row: 2; */
 }
-@media (max-width: 768px) {
+
+@media (max-width: 780px) {
     .main{
         height: 100%;
       display: grid;
@@ -62,10 +63,10 @@
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 1;
-        margin-left: 0vh;
+        margin-left: 2vh;
         /* grid-column: 1;
         grid-row: 1; */
-       justify-self: center;
+       /* justify-self: center; */
     }
 
     .complect__options{

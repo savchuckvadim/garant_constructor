@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./styles/btnStyle.css">
+    
 
 
 
@@ -58,7 +58,7 @@
                                     src="./img/btns/Ellipse 1.svg" alt=""></button></li>
                     </ul>
                 </div>
-                <div class="dropdown dropdown__od">
+                <div class="dropdown dropdown__od--modal">
                     <button class="btn btn__od--modal dropdown-toggle" type="button"
                         id="dropdownMenu3" data-bs-toggle="dropdown" aria-expanded="false">
                         <p>Количество пользователей</p>
@@ -130,10 +130,10 @@
                             Бухгалтер
                             госсектора</label><img src="./img/btns/Ellipse 1.svg" alt=""></button>
 
-                    <button type="button" class="btn btns__complect  btn__accountant"><label for="complect3"
+                    <button type="button" class="btn btns__complect  btn__accountantBig"><label for="complect3"
                             class="complect__name">
                             Главный Бухгалтер</label><img src="./img/btns/Ellipse 1.svg" alt=""></button>
-                    <button type="button" class="btn btns__complect  btn__budget"><label for="complect4"
+                    <button type="button" class="btn btns__complect  btn__budgetBig"><label for="complect4"
                             class="complect__name">
                             Главный
                             Бухгалтер
@@ -146,7 +146,7 @@
                             alt=""></button>
                             <div class="dropdown dropdown__od">
                                 <button class="btn btn__od dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Выберите количество пользователей
+                                    Количество пользователей
             
                                 </button>
                             <ul class="dropdown-menu menu__od" aria-labelledby="dropdownMenu2">
@@ -162,11 +162,11 @@
                             </div>
                     <button type="reset" class="btn__reset btn btn-dark">Сбросить</button>
                     <!-- </div> -->
-                    <div class="row general__row2 ">
+                    <!-- <div class="row general__row2 "> -->
 
                         <!-- <input class="form-control me-2 btn btn__accountant" name="login" autocomplete="username" type="button" value="Бухгалтер">
                     <input class="form-control btn btn-primary me-2" name="password" autocomplete="current-password" type="button"> -->
-                    </div>
+                    <!-- </div> -->
                 </div>
 
                 <!-- <button id="app-login-btn" class="btn btn-outline-info" type="submit">Sign In</button> -->
@@ -383,12 +383,14 @@
                 <!-- </form> -->
          </div>
                 <div class="result__wrapper">
-                    <p id="complect__name" class="result blocksWeight">Наименование комплекта  Гарант-Бухгалтер</p>
+                    <div class="result__information">
+                        <p id="complect__name" class="result blocksWeight">Комплект  Гарант-Бухгалтер</p>
                     <p id="blocksWeight" class="result blocksWeight">Вес  4.5</p>
                     <p id="pod" class="result blocksWeight">количество одновременных доступов   10</p>
                     <p id="complect__lt" class="result blocksWeight">Legal Tech  малый пакет</p>
                     <p id="complect__price" class="result blocksWeight">Стоимость 6 780 р</p>
                     <p><a href="#"> Описание комплекта</a></p>
+                    </div>
                     <button type="button" class="btn btn-primary result__btn">Выбрать комплект</button>
                     <!-- <div class="result__container">
                         <button class="description">Показать описание</button>
