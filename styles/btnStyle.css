@@ -151,8 +151,8 @@
         display: flex;  
     }
     .btn__modal, .dropdown__od--modal, .btn__reset, .modal__complect, .btn__od--modal, .btns__complect {
-        width: 90%;
-        justify-self: center;
+        min-width: 40vh
+        /* justify-self: center; */
     }
 
     .general {

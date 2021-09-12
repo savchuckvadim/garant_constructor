@@ -14,6 +14,11 @@
 
     border-width: 1px;
     border-color: rgb(160, 179, 179);
+
+
+    transition-property: position, background-color, color top, bottom, left, right;
+    transition-duration: 1s; 
+    transition-delay: 0.1s; 
 }
 
 .result__container {
@@ -80,6 +85,8 @@
     .result__information{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
     }
 
 
