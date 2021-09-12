@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="./styles/testSasss.sass">
     
 
 
@@ -18,13 +20,13 @@
     <title>April</title>
 </head>
 <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen modal-dialog-centered">
-        <div class="modal-content">
+    <div  class="modal-dialog modal-fullscreen modal-dialog-centered">
+        <div id="modal-dialog" class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel"><img class="header__logo" src="./img/logo-icon-solid-horizontal.svg" alt="logo"></h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div  class="modal-body">
 
                 <div class="dropdown">
                     <button class="btn btn-modal dropdown-toggle modal__complect" type="button"
@@ -76,7 +78,7 @@
                 </ul>
                 </div>
 
-                <button type="reset" class="btn__reset btn btn-dark">Сбросить</button>
+                <button type="reset" class="btn__reset btn btn-light">Сбросить</button>
 
 
 
@@ -95,7 +97,7 @@
 
         <!-- Modal -->
 
-        <header>
+        <header id="header">
             <div class="header__container">
                 <!-- <div class="header__logoContainer"> -->
                 <img class="header__logo" src="./img/logo-icon-solid-horizontal.svg" alt="logo">
@@ -104,6 +106,7 @@
                     <button id="round"></button>
                 </div>
             </div>
+            
         </header>
         <div class="main">
 
@@ -160,7 +163,7 @@
                                 <li><button type="button" class="btn btn__od dropdown-item"><label for="">50 Одновременных доступа</label></button></li>
                             </ul>
                             </div>
-                    <button type="reset" class="btn__reset btn btn-dark">Сбросить</button>
+                    <button type="reset" class="btn__reset btn btn-light">Сбросить</button>
                     <!-- </div> -->
                     <!-- <div class="row general__row2 "> -->
 
@@ -382,7 +385,7 @@
                     </div>   
                 <!-- </form> -->
          </div>
-                <div class="result__wrapper">
+                <div id="result" class="result__wrapper">
                     <div class="result__information">
                         <p id="complect__name" class="result blocksWeight">Комплект  Гарант-Бухгалтер  </p>
                     <p id="blocksWeight" class="result blocksWeight">Вес  4.5</p>

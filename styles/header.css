@@ -15,9 +15,14 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     
 }
-
+#header{
+    transition-property: background-image, background-color, text-color, color, transform;
+    transition-duration: 2.5s; 
+    transition-delay: 0.5s; 
+}
 
 .header__container {
     margin:  auto;

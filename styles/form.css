@@ -2,3 +2,7 @@
     /* width: 100%; */
     margin-left: 0;
 }
+
+.form-check-input:active{
+    filter: invert(80%);
+}
