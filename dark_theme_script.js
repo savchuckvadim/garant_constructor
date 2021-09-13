@@ -67,9 +67,11 @@ round.addEventListener('click', () => {
         changeColorOfClass(reset, 'white')
         exampleModal.style.backgroundColor = "rgba(37, 40, 45, 1)";
         exampleModal.style.color = "white";
+       
         result.style.backgroundColor = "rgba(37, 40, 45, 1)";
         result.style.color = "white";
         result.style.borderStyle = 'doted'
+       
         header.style.backgroundColor = "rgba(37, 40, 45, 1)";
         
 

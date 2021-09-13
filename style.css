@@ -10,6 +10,7 @@
 @import url('./styles/complectOptions.css');
 
 @import url('./styles/main.css');
+@import url('./styles/fonts.css');
 *,
 *::before,
 *::after {
@@ -25,10 +26,10 @@ ol[class] {
 /* Убираем внешние отступы */
 body,
 h1,
-h2,
+
 h3,
 h4,
-p,
+
 ul[class],
 ol[class],
 li,
@@ -43,9 +44,9 @@ dd {
 /* Выставляем основные настройки по-умолчанию для body */
 body {
     min-height: 100vh;
-    /* scroll-behavior: smooth; */
-    /* text-rendering: optimizeSpeed;
-    line-height: 1.5; */
+    scroll-behavior: smooth; 
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -76,6 +77,7 @@ button,
 textarea,
 select {
     font: inherit;
+   
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
@@ -96,7 +98,7 @@ body {
     padding: 0;
     min-width: 100%;
     font-family: 'Source Sans Pro';
-    font-style: bold;
+   
 }
 h1{
     text-align: center;

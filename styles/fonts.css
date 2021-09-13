@@ -1,4 +1,56 @@
-/* 
+body{
+    font-family: 'Source Sans Pro';
+}
+.general__title{
+    margin-top: 32px;
+    display: block;
+}
+.btn{
+  
+    font-style: bold;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+}
+
+h2{
+    /* margin: 8px; */
+    margin-top: 32px;
+    font-style: bold;
+    font-size: 24px;
+    color: rgba(37, 40, 45, 1);
+    font-weight: 600;
+}
+
+p{
+    margin-top: 16px;
+    font-style: bold;
+    font-size: 16px;
+    color: rgba(69, 74, 84, 1);
+    font-weight: 600;
+}
+/* Ткест в кнокпах
+Font 
+Source Sans Pro
+Weight 
+600
+Style 
+normal
+Size 
+18px
+Line height 
+22px
+Letter 
+-0.3 px
+
+background: rgba(37, 40, 45, 1);
+
+ */
+
+
+    /* 
 первый заголовок : выберите комплект
 result: тонкий текст - названия
 названия инфоблоков
@@ -40,23 +92,7 @@ background: rgba(37, 40, 45, 1);
  */
 
 
-/* Тест в кнокпах
-Font 
-Source Sans Pro
-Weight 
-600
-Style 
-normal
-Size 
-18px
-Line height 
-22px
-Letter 
--0.3 px
 
-background: rgba(37, 40, 45, 1);
-
- */
 
  /* Текст в заголовках инфоблоков
  Weight 
