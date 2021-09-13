@@ -33,28 +33,7 @@
 
 @media (max-width: 900px) {
     .result__container {
-        /* max-width: 100vh;
-        height: 50vh;
-        
-        padding: 2vh;
-
-        position: relative;
-       
-        bottom: 0px;
-        border-style: solid;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        border-width: 1px; */
-
-        /* background-color: rgb(181, 165, 192); */
-
-        /* border-color: rgb(160, 179, 179); */
-
-
-        /* margin-top: 5vh; */
-        /* top: 15vh;
-        right: 0vh; */
+   
     }
 }
 
@@ -80,16 +59,7 @@
         flex-direction: column;
 
         justify-content: end;
-        /* align-items: flex-end; */
-        /* top: 15vh;
-        right: 3vh;
-        border-style: solid;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     
-        border-width: 1px;
-        border-color: rgb(160, 179, 179); */
         background-color: rgb(34, 22, 46);;
         
     }
