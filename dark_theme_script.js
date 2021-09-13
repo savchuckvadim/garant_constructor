@@ -1,3 +1,4 @@
+const html = document.getElementsByTagName('html')[0]
 const color = document.getElementById('color');
 const growing = document.getElementById('growing');
 const round = document.getElementById('round');
@@ -53,11 +54,14 @@ round.addEventListener('click', () => {
         changeColorOfClass(btn, 'black')
         changeColorOfClass(reset, 'black')
 
-        header.style.backgroundColor = "white";
+        // header.style.backgroundColor = "white";
         // round.style.backgroundImage = "url('./img/darktheme/moon-fill.svg')";
         round.style.backgroundImage = "url('./img/broSunMoon/moon.svg')"
         round.style.transform = "rotateZ(3600deg)";
-      
+
+
+        html.style.cssText = "--bg: white"
+
         return flag = false;
         
     }else{
@@ -72,7 +76,7 @@ round.addEventListener('click', () => {
         result.style.color = "white";
         result.style.borderStyle = 'doted'
        
-        header.style.backgroundColor = "rgba(37, 40, 45, 1)";
+        // header.style.backgroundColor = "rgba(37, 40, 45, 1)";
         
 
         round.style.backgroundColor = "white";
@@ -80,7 +84,8 @@ round.addEventListener('click', () => {
         round.style.backgroundImage = "url('./img/broSunMoon/sun.svg')";
         round.style.transform = "rotateZ(-3600deg)";
         
-        
+        html.style.setProperty ("--bg", "rgba(37, 40, 45, 1)")
+        // html.style.cssText = "--bg: orange"
         return flag = true;
         
 

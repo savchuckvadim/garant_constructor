@@ -61,13 +61,15 @@
     .result__wrapper {
         width: 100%;
         height: auto;
-        min-height: auto;
+        
+        min-height: 10px;
+        /* height: 250px; */
         padding: 1vh;
         position: sticky;
         right: 0vh;
         left: 0vh;
         bottom: 0px;
-        background-color: rgb(0, 55, 117);
+        background-color: rgb(190, 116, 209);
         color: rgb(255, 255, 255);
         /* justify-self: end; */
 

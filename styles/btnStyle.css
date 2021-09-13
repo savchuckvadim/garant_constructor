@@ -55,9 +55,9 @@
 
 
 
-@media (max-width: 960px) {
+@media (max-width: 1155px) {
     .general {
-        grid-template-columns: repeat(3, 30%);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
        
     }
@@ -88,7 +88,7 @@
     }
 }
 
-@media (max-width: 798px) {
+@media (max-width: 950px) {
     .general {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
