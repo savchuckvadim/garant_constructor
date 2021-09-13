@@ -35,8 +35,8 @@
 
 
     transition-property: background-color, transform, color;
-    transition-duration: 0.5s;
-    /* transition-delay: 0.1s;  */
+    transition-duration: 1s;
+    transition-delay: 0.1s; 
 }
 .btn__od{
     width: 100%;
@@ -212,13 +212,18 @@
     border-color: rgb(34, 22, 46);
 
 }
+.btn__reset, .btn__reset--modal{
+    border: 2px solid;
+    border-color: rgb(34, 22, 46);
+}
+
 
 .modal__complect {
     border: 2px solid;
-    border-color: rgb(0, 0, 0);
-    background-color: rgb(49, 31, 66);
+    border-color:  rgb(49, 31, 66);
+    background-color: white;
     
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 @media (max-width: 322px) {

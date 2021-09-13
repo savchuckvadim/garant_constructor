@@ -6,6 +6,7 @@ const header = document.querySelector('#header')
 const btn = document.querySelectorAll('.btns__complect')
 const exampleModal = document.querySelector('#modal-dialog')
 const result = document.querySelector('#result')
+const reset = document.querySelector('.btn__reset')
 
 var flag = false;
 
@@ -49,9 +50,8 @@ round.addEventListener('click', () => {
         exampleModal.style.color = "black";
         result.style.backgroundColor = "white";
         result.style.color = "black";
-        btn.forEach((element) => {
-            element.style.color = "black"; 
-        })
+        changeColorOfClass(btn, 'black')
+        changeColorOfClass(reset, 'black')
 
         header.style.backgroundColor = "white";
         // round.style.backgroundImage = "url('./img/darktheme/moon-fill.svg')";
@@ -63,9 +63,8 @@ round.addEventListener('click', () => {
     }else{
         body.style.backgroundColor = "rgba(37, 40, 45, 1)";
         body.style.color = "white"; 
-        btn.forEach((element) => {
-            element.style.color = "white"; 
-        })
+        changeColorOfClass(btn, 'white')
+        changeColorOfClass(reset, 'white')
         exampleModal.style.backgroundColor = "rgba(37, 40, 45, 1)";
         exampleModal.style.color = "white";
         result.style.backgroundColor = "rgba(37, 40, 45, 1)";
@@ -74,7 +73,7 @@ round.addEventListener('click', () => {
         header.style.backgroundColor = "rgba(37, 40, 45, 1)";
         
 
-        round.style.backgroundColor = "";
+        round.style.backgroundColor = "white";
 
         round.style.backgroundImage = "url('./img/broSunMoon/sun.svg')";
         round.style.transform = "rotateZ(-3600deg)";
@@ -86,5 +85,11 @@ round.addEventListener('click', () => {
 
     }
 })
-
+function changeColorOfClass(html, color){
+    if(html.length > 0){
+        html.forEach((element) => {
+            element.style.color = color; 
+        })
+    }
+}
 console.log('js dark theme');
