@@ -16,3 +16,7 @@
 .btn__modal{
     color: black;
 }
+
+#modal-dialog{
+    background-color: var(--background);
+}

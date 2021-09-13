@@ -1,0 +1,13 @@
+html{
+    --background: 'white';
+    --backgroundDark: 'rgba(37, 40, 45, 1)';
+    --backgroundLight: 'white';
+    --textColorGreyP: 'rgba(69, 74, 84, 1)';
+    --textColorGreyH2: 'rgba(37, 40, 45, 1)';
+    --textColorBlack : 'black';
+    --textColorWhite: 'white';
+
+}
+html{
+    background-color: var(--background);
+}

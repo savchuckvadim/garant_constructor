@@ -1,0 +1,36 @@
+.general {
+    padding: 0;
+    max-width: 99%;
+    padding-right: 1vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2vh;
+}
+
+@media (max-width: 1225px) {
+    .general {
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: repeat(3, 1fr);
+       
+    }
+
+}
+
+@media (max-width: 950px) {
+    .general {
+        grid-template-columns: repeat(2, 48%);
+        grid-template-rows: repeat(4, 1fr);
+       
+    }
+}
+
+@media (max-width: 700px) {
+    .general {
+        padding-top: 1vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1vh;
+    }
+}

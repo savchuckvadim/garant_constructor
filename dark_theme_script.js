@@ -42,14 +42,14 @@ var flag = false;
 
 round.addEventListener('click', () => {
 
-    if(flag){
+    if (flag) {
         round.style.backgroundColor = "white";
-        body.style.backgroundColor = "white";
+        // body.style.backgroundColor = "white";
         body.style.color = "black";
 
-        exampleModal.style.backgroundColor = "white";
+        // exampleModal.style.backgroundColor = "white";
         exampleModal.style.color = "black";
-        result.style.backgroundColor = "white";
+        // result.style.backgroundColor = "white";
         result.style.color = "black";
         changeColorOfClass(btn, 'black')
         changeColorOfClass(reset, 'black')
@@ -59,43 +59,54 @@ round.addEventListener('click', () => {
         round.style.backgroundImage = "url('./img/broSunMoon/moon.svg')"
         round.style.transform = "rotateZ(3600deg)";
 
+        html.style.setProperty("--background", 'white')
+        html.style.setProperty("--textColorGreyP", "rgba(69, 74, 84, 1)")
+        html.style.setProperty("--textColorGreyH2", "rgba(37, 40, 45, 1)")
+        html.style.setProperty("--textColor", "black")
 
-        html.style.cssText = "--bg: white"
+        // html.style.cssText = "--bg: white"
 
         return flag = false;
-        
-    }else{
-        body.style.backgroundColor = "rgba(37, 40, 45, 1)";
-        body.style.color = "white"; 
+
+    } else {
+        // body.style.backgroundColor = "rgba(37, 40, 45, 1)";
+        body.style.color = "white";
         changeColorOfClass(btn, 'white')
         changeColorOfClass(reset, 'white')
-        exampleModal.style.backgroundColor = "rgba(37, 40, 45, 1)";
+        // exampleModal.style.backgroundColor = "rgba(37, 40, 45, 1)";
         exampleModal.style.color = "white";
-       
-        result.style.backgroundColor = "rgba(37, 40, 45, 1)";
+
+        // result.style.backgroundColor = "rgba(37, 40, 45, 1)";
         result.style.color = "white";
         result.style.borderStyle = 'doted'
-       
+
         // header.style.backgroundColor = "rgba(37, 40, 45, 1)";
-        
+
 
         round.style.backgroundColor = "white";
 
         round.style.backgroundImage = "url('./img/broSunMoon/sun.svg')";
         round.style.transform = "rotateZ(-3600deg)";
-        
-        html.style.setProperty ("--bg", "rgba(37, 40, 45, 1)")
+
+        html.style.setProperty("--background", 'rgba(37, 40, 45, 1)')
+        html.style.setProperty("--textColorGreyP", "white")
+        html.style.setProperty("--textColorGreyH2", "white")
+        html.style.setProperty("--textColor", "white")
+
+
+
         // html.style.cssText = "--bg: orange"
         return flag = true;
-        
+
 
 
     }
 })
-function changeColorOfClass(html, color){
-    if(html.length > 0){
+
+function changeColorOfClass(html, color) {
+    if (html.length > 0) {
         html.forEach((element) => {
-            element.style.color = color; 
+            element.style.color = color;
         })
     }
 }

@@ -1,6 +1,6 @@
-.general {
+/* .general {
     padding: 0;
-}
+} */
 
 .btns__complect,
 .btn__accountant,
@@ -35,14 +35,14 @@
 
 
     transition-property: background-color, transform, color;
-    transition-duration: 1s;
-    transition-delay: 0.1s; 
+    transition-duration: 0.5s;
+    transition-delay: 0.0s; 
 }
 .btn__od{
     width: 100%;
 }
 
-.general {
+/* .general {
     max-width: 99%;
     padding-right: 1vh;
     margin: 0;
@@ -50,17 +50,17 @@
     grid-template-rows: 3fr;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2vh;
-}
+} */
 
 
 
 
 @media (max-width: 1225px) {
-    .general {
+    /* .general {
         grid-template-columns: repeat(3, 32%);
         grid-template-rows: repeat(3, 1fr);
        
-    }
+    } */
     .btn__accountant,
     .btn__accountantBig,
     .btn__budget
@@ -89,11 +89,11 @@
 }
 
 @media (max-width: 950px) {
-    .general {
+    /* .general {
         grid-template-columns: repeat(2, 48%);
         grid-template-rows: repeat(4, 1fr);
        
-    }
+    } */
     .btn__accountant,
     .btn__accountantBig
     
@@ -152,23 +152,24 @@
     }
     .btn__modal, .dropdown__od--modal, .btn__reset, .modal__complect, .btn__od--modal, .btns__complect {
         min-width: 40vh
+        /* width: 100%; */
         /* justify-self: center; */
     }
 
-    .general {
+    /* .general {
         padding-top: 1vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
        
 
         grid-gap: 1vh;
-    }
+    } */
 }
 
-.complect__generalParameters {
+/* .complect__generalParameters {
     font-size: 100vh;
     line-height: 100vh;
-}
+} */
 
 
 
@@ -249,6 +250,7 @@
 
  height: 7vh;   */
         width: 275px;
+        /* width: 90%; */
         height: 45px;
 
     }

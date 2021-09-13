@@ -1,11 +1,14 @@
+// import { flag } from "./dark_theme_script";
+const html = document.getElementsByTagName('body')[0]
 const round = document.getElementById('round');
 // const round = document.getElementsByClassName('round');
 const slider = document.getElementsByClassName('slider');
 const theme = document.querySelector('#theme');
 const switchh = document.querySelector('#switchh');
 const body = document.querySelector('body');
-let flag = 0;
+let flag = false;
 let flagForBtnComplect = [0, 0, 0, 0, 0, 0]
+
 
 
 
@@ -60,19 +63,30 @@ let colorOfBtnComplect = ['rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgb
 // })
 
 console.log(btnComplect)
+let x = html.style.getPropertyValue('background-color')
 
 btnComplect.forEach((element, index) => {
 
     element.addEventListener('click', () => {
+        console.log(x)
+        // console.log(btnComplect)
         // window.alert('btn')
         btnComplect.forEach((el) => {
-            el.style.backgroundColor = 'white'
-            el.style.color = 'black'
+            
+                // el.style.setProperty ("background-color", 'white')
+            
+                el.style.setProperty ("background-color", 'rgba(37, 40, 45, 1)')
+                el.style.color = 'white'
+            
+           
+            
+            // el.style.color = 'black'
         })
         
         element.style.backgroundColor = colorOfBtnComplect[index]
-        element.style.color = 'white'
-
+        
+            element.style.color = 'white'
+        
 
     })
 })

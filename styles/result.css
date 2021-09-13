@@ -1,4 +1,6 @@
 .result__wrapper {
+    background-color: var(--background) ;
+    color: var(--textColorGreyP);
     margin-top: 32px;
     width: 355px;
     /* height: 45vh; */
@@ -18,7 +20,7 @@
     border-color: rgb(160, 179, 179);
 
 
-    transition-property: position, background-color, color top, bottom, left, right;
+    transition-property: position, background-color, top, bottom, left, right;
     transition-duration: 2s; 
     transition-delay: 0.2s; 
 }
@@ -60,7 +62,7 @@
 
     .result__wrapper {
         width: 100%;
-        height: auto;
+        height: 100%;
         
         min-height: 10px;
         /* height: 250px; */
@@ -69,14 +71,15 @@
         right: 0vh;
         left: 0vh;
         bottom: 0px;
-        background-color: rgb(190, 116, 209);
-        color: rgb(255, 255, 255);
+        /* background-color: rgb(190, 116, 209); */
+        /* color: rgb(255, 255, 255); */
         /* justify-self: end; */
 
         display: flex;
         flex-direction: column;
 
         justify-content: space-between;
+        /* align-items: flex-end; */
         /* top: 15vh;
         right: 3vh;
         border-style: solid;
