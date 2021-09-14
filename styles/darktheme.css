@@ -10,11 +10,11 @@ body{
     align-items: center; */
    
     /* background-color: aqua; */
-    transition-property: background-color, color;
+    transition-property: background-color;
     /* transition-property: color; */
     /* transition-property: font-size; */
     transition-duration: 2.5s;
-    transition-delay: 0.3s;
+    transition-delay: 0.1s;
     background-color: var(--background);
 }
 

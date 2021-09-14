@@ -22,7 +22,7 @@ header {
 #header{
     transition-property: background-image, background-color, text-color, color, transform;
     transition-duration: 2.5s; 
-    transition-delay: 0.5s; 
+    transition-delay: 0.2s; 
 }
 
 .header__container {

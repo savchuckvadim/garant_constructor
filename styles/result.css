@@ -20,8 +20,8 @@
     border-color: rgb(160, 179, 179);
 
 
-    transition-property: position, background-color, top, bottom, left, right;
-    transition-duration: 1.2s; 
+    transition-property: position, background-color, top, bottom, left, right, width, height;
+    transition-duration: 1.5s; 
     transition-delay: 0.1s; 
 }
 
@@ -60,7 +60,7 @@
 
         justify-content: end;
     
-        background-color: rgb(34, 22, 46);;
+        /* background-color: rgb(34, 22, 46);; */
         
     }
     .result__information{
@@ -76,7 +76,7 @@
         margin: 1px;
         /* color: blanchedalmond; */
         font-size: small;
-        color: white;
+        /* color: white; */
     }
 
 }
@@ -113,7 +113,8 @@
     
         border-width: 1px;
         border-color: rgb(160, 179, 179); */
-        background-color: rgb(34, 22, 46);;
+        /* background-color: rgb(34, 22, 46); */
+
         
     }
     .result__information{
@@ -129,7 +130,7 @@
         margin: 1px;
         /* color: blanchedalmond; */
         font-size: small;
-        color: white;
+        /* color: white; */
     }
 
 }
