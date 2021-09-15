@@ -9,6 +9,7 @@
 .btn__budgetBig,
 .btn__lawyer,
 .btn__company,
+.btn__companyPro,
 .btn__od,
 .btn__reset,
 .btn__modal,
@@ -64,27 +65,33 @@
     .btn__accountant,
     .btn__accountantBig,
     .btn__budget
+    
     {
          grid-row-start: 1;
 
     }
     .btn__budgetBig,
-    .btn__lawyer,
-    .btn__company
+    .btn__ofice,
+    .btn__lawyer
+    
      {
         grid-row-start: 2;
     }
-    
-    .btn__reset{
+    .btn__company,
+    .btn__companyPro,
+    .btn__od
+    {
         grid-row-start: 3;
         
         /* grid-column-start: 2;
         grid-column-end: 4 */
     }
-    .btn__od{
+    .btn__reset
+    {
         
-        grid-row-start: 3;
+        grid-row-start: 4;
         grid-column-start: 1;
+        grid-column-end: 4;
     }
 }
 
@@ -112,16 +119,24 @@
     .btn__company{
         grid-row-start: 3;
     }
-    .btn__reset{
+    .btn__ofice,
+    .btn__companyPro{
         grid-row-start: 4;
-        
+    }
+    .btn__reset
+    {
+       
+        grid-row-start: 5;
+        grid-column-start: 1;
+        grid-column-end: 1;
         /* grid-column-start: 2;
         grid-column-end: 4 */
     }
     .btn__od{
-        
-        grid-row-start: 4;
+       
+        grid-row-start: 5;
         grid-column-start: 2;
+        grid-column-end: 2;
     }
 }
 
@@ -133,7 +148,9 @@
     .btn__accountantBig,
     .btn__budgetBig,
     .btn__lawyer,
+    .btn__ofice,
     .btn__company,
+    .btn__companyPro,
     .btn__od,
     .dropdown__od {
         /* .btn__reset {  */
@@ -143,12 +160,16 @@
     .btn__accountant--modal,
     .btn__budget--modal,
     .btn__lawyer--modal,
+    .btn__ofice--modal,
     .btn__company--modal,
+    .btn__companyPro--modal,
     .btn__od--modal,
     /* .btn__reset--modal, */
     .btn__modal,
     .dropdown__od--modal {
         display: flex;  
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
     .btn__modal, .dropdown__od--modal, .btn__reset, .modal__complect, .btn__od--modal, .btns__complect {
         min-width: 40vh;
@@ -194,10 +215,23 @@
     border-color: rgba(46, 121, 234, 1);
 }
 
+.btn__ofice,
+.btn__ofice--modal {
+    border: 2px solid;
+    border-color: rgb(23, 80, 165);
+}
+
 .btn__company,
 .btn__company--modal {
     border: 2px solid;
     border-color: rgba(151, 103, 200, 1);
+
+}
+
+.btn__companyPro,
+.btn__companyPro--modal {
+    border: 2px solid;
+    border-color: rgb(104, 54, 153);
 
 }
 
@@ -209,7 +243,7 @@
 
 .btn__od,
 .btn__od--modal {
-    border: 2px solid;
+    border: 1px solid;
     border-color: rgb(34, 22, 46);
 
 }

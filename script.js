@@ -53,7 +53,7 @@ function myFunction() {
 const btnComplect = document.querySelectorAll('.btns__complect')
 let outline = '-outline'
 let btnComplectFlag = false
-let colorOfBtnComplect = ['rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(46, 121, 234, 1)', 'rgba(151, 103, 200, 1)', 'rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(46, 121, 234, 1)', 'rgba(151, 103, 200, 1)']
+let colorOfBtnComplect = ['rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(46, 121, 234, 1)', 'rgb(23, 80, 165)', 'rgba(151, 103, 200, 1)', 'rgb(104, 54, 153) ', 'rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(14, 201, 111, 1)', 'rgba(255, 113, 33, 1)', 'rgba(46, 121, 234, 1)', 'rgb(23, 80, 165)', 'rgba(151, 103, 200, 1)', 'rgb(104, 54, 153) ']
 
 
 // btnComplect.forEach((element, index) => {
